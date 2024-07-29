@@ -39,6 +39,3 @@ if playagain == "yes":
     game()
 else:
     pass
-
-
-
