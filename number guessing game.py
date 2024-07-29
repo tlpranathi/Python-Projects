@@ -19,11 +19,10 @@ def game():
             elif guess < mynum:
                 print("you guessed too low!!!")
 
-
         if guess == mynum:
             print("\nCONGRATULATIONS")
             if i == 1:
-                print("you guessed the number in", i, "chance" )
+                print("you guessed the number in", i, "chance")
             else:
                 print("you guessed the number in", i, "chances")
             break
@@ -31,11 +30,12 @@ def game():
     if guess != mynum:
         print("\nYOU LOSE")
         print("the number was", mynum)
+        
 
 game()
 
-playagain = input("do you want to play again?\n yes/no - ")
-if playagain == "yes":
+play_again = input("do you want to play again?\n yes/no - ")
+if play_again == "yes":
     game()
 else:
     pass
