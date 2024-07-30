@@ -79,25 +79,3 @@ while True:
         computer_guess(lower_bound, upper_bound)
     else:
         break
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
