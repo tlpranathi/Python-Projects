@@ -34,6 +34,7 @@ def game():
 
 game()
 
+while True:
 play_again = input("do you want to play again?\n yes/no - ")
 if play_again == "yes":
     game()
