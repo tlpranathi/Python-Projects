@@ -61,7 +61,6 @@ def computer_guess(lower_bound, upper_bound):
 
 
 
-
 # upper and lower bound must be integers
 lower_bound = get_valid_integer("\nEnter the lower bound: ")
 upper_bound = get_valid_integer("Enter the upper bound: ")
