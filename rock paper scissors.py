@@ -1,5 +1,7 @@
 # ROCK PAPER SCISSORS
 import random
+
+# function to get valid integer
 def get_valid_integer(question):
     while True:
         try:
@@ -11,6 +13,7 @@ def get_valid_integer(question):
         except ValueError:
             print("enter a valid number")
 
+# function to get valid choice without wasting rounds
 def get_valid_choice(question):
     while True:
         user_choice = input(question).lower()
@@ -19,9 +22,11 @@ def get_valid_choice(question):
         else:
             print("Invalid choice, choose r, p, or s.")
 
+# function to display scores
 def display_scores(user_score, computer_score):
     print("your score: {0} | computer's score: {1}".format(user_score, computer_score))
 
+# function to play again
 def play_again():
     while True:
         replay = input("do you want to play again? (y/n): ").lower()
@@ -30,10 +35,12 @@ def play_again():
         else:
             print("Invalid input, choose y or n.")
 
+# game definition
 def game():
+    # dictionary for game logic instead of multiple if-elif conditions
     game_choices = {"r": "rock", "p": "paper", "s": "scissors"}
     winning_combinations = {"r": "s", "p": "r", "s": "p"}
-
+    
     rounds = get_valid_integer("\nhow many rounds do you want to play?: ")
 
     user_score = 0
@@ -73,8 +80,4 @@ while True:
     game()
     if not play_again():
         break
-
-
-
-
 
