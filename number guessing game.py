@@ -30,7 +30,7 @@ def game():
     if guess != mynum:
         print("\nYOU LOSE")
         print("the number was", mynum)
-        
+
 
 game()
 
