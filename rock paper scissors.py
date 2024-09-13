@@ -56,16 +56,12 @@ def game():
 
         display_scores(user_score, computer_score)
 
-
-
     if computer_score > user_score:
         print("\n<<<<< COMPUTER WINS >>>>>")
     elif computer_score < user_score:
         print("\n<<<<< YOU WIN >>>>>")
     else:
         print("\nTIE GAME!!!")
-
-
 
 
 # Main
